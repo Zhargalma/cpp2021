@@ -1,0 +1,19 @@
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a, b; 
+	ofstream f; 
+	f.open ("output");
+	cout<<" a = "; 
+	cin>>a;
+	cout<<" b = "; 
+	cin>>b;
+	 for (int i = a; i <= b ; i++)
+    {
+        f << i * 3 << endl;
+    }
+    f.close ( ); 
+return 0;
+}
