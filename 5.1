@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std ;
+
+float SquaredSum(float a, float b) {
+    float c;
+    c = pow ((a + b), 2);
+  return c;
+}
+int main()
+    {
+    float h, w, e, r;
+    cout << "первая дробь:"<<endl;
+    cin >> h >> w;
+    cout << "вторая дробь:"<<endl;
+    cin >> e >> r;
+
+    float s, y;
+    s = h / w;
+    y = e / r;
+    cout << SquaredSum(s, y) << endl;
+    return 0;
+    }
