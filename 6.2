@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void print (int k);
+void print (float k);
+void print (char k);
+void print (int k, int b);
+
+int main()
+{
+print (59);
+print (889);
+print ('a');
+print (5,91);
+
+return 0;
+}
+void print (int k){
+cout <<k <<"\n";
+}
+void print (float k){
+cout <<k <<"\n";
+}
+void print (char k){
+cout <<k <<"\n";
+}
+void print (int k, int p){
+cout <<k <<", " <<p;
+}
