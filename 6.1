@@ -1,24 +1,17 @@
-#include <iostream>
-#include <cstring>
+#include<iostream>
 using namespace std ;
-
+void reverse(char *s);
 int main()
 {
-    char str[] = "политех";
-    char *start, *end;
-    int a;
-    char t;
-    cout << "Исходная:" << str << "\n";
-    a=strlen(str);
-    start = str;
-    end = &str[a-1];
-    while(start < end) {
-        t = *start;
-        *start = *end;
-        *end = t;
-        start++;
-        end--;
-    }
-        cout << "Перевернутая:" << str << "\n";
-        return 0;
+    char str[]= "политех";
+    reverse(str);
+    return 0;
+}
+void reverse(char *s)
+{
+    if(*s)
+    reverse(s+1);
+    else
+    return;
+    cout <<*s;
 }
