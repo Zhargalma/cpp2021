@@ -1,29 +1,34 @@
 #include <iostream>
 using namespace std;
 
-void print (int k);
-void print (float k);
-void print (char k);
-void print (int k, int b);
 
-int main()
-{
-print (59);
-print (889);
-print ('a');
-print (5,91);
-
-return 0;
-}
-void print (int k){
-cout <<k <<"\n";
-}
-void print (float k){
-cout <<k <<"\n";
-}
-void print (char k){
-cout <<k <<"\n";
-}
-void print (int k, int p){
-cout <<k <<", " <<p;
-}
+    void f(int i);
+    void f(float i);
+    void f(char i);
+    void f(int i,int j);
+    
+    int main()
+    {
+        f(1);
+        f(2964);
+        f('a');
+        f(5, 9);
+        return 0;
+    }
+    void f(int i)
+    {
+        cout<< "В f(int) i равно " << i<<"\n";
+    }
+    void f(float i)
+    {
+    cout<< "В f(float) i равно " << i<<"\n";
+    }
+    void f(char i)
+    {
+    cout<< "В f(char) i равно " << i<<"\n";
+    }
+    void f(int i,int j)
+    {
+        cout<< "В f(int i,int j) i равно " << i;
+        cout << ", j равно "<<j<<"\n";
+    }
