@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class Box{
+	public:
+		int x, y, z;
+		Box(int X1, int Y1, int Z1){
+			x=X1;
+			y=Y1;
+			z=Z1;
+		}
+		int Volume(){
+			return x*y*z;
+		}
+};
+int main(){
+    int x, y, z;
+    cout << "ширина: ";
+    cin >> x;
+
+    cout << "длина: ";
+    cin >> y;
+
+    cout << "высота: ";
+    cin >> z;
+	Box myBox(x, y, z);
+	cout<<myBox.Volume()<<endl;
+	return 0;
+}
