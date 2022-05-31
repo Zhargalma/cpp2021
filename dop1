@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+string z[24]={
+"a", "b", "c", "d", "e", "f", "g", "h", "i",
+"j", "k", "l", "m", "n", "o", "p", "q", "r",
+"s", "t", "u", "v", "w", "x"
+};
+int n;
+	cin>>n;
+	if(n > 24) cout<<"Ошибка,введите заново"<< "\n", cin>>n;
+	for(int i=0; i<n; i++)
+		cout<<z[i]<< "\n";
+	return 0;
+}
