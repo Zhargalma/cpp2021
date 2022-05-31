@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main(){
+	ofstream f("numbers.txt");
+	int n;
+	cin>>n;
+	if(n>=0){
+		f<<n<<"\n";
+		cin>>n;
+	}
+	f.close();
+	return 0;
+}
